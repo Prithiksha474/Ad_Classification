@@ -46,11 +46,11 @@ def classify_ad(image_path):
     print("\nExtracted Text (Potential Brand/Product Names):")
     print(extracted_text)
 
-    # Visualize the image with bounding boxes (optional)
+  
     plt.imshow(cv2.cvtColor(cv2.imread(image_path), cv2.COLOR_BGR2RGB))
     plt.title("Ad Image with Detected Products")
     plt.show()
 
-# Example usage: Provide the path to the ad image
-image_path = 'path_to_ad_image.jpg'  # Replace with the path to your ad image
+
+image_path = 'input.jpeg'  
 classify_ad(image_path)
